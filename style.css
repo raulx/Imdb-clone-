@@ -8,13 +8,27 @@ body{
     color: #fff;
 }
 .container{
-    max-width: 1100px;
+    max-width: 1300px;
     margin: auto;
 }
+
+
+/* navigation bar classes */
 .navbar{
+    display: flex;
+    gap: 20px;
+    align-items: center;
     margin-top: 20px;
 }
-.logo{
-    height: 35px;
-    width: 70px;
+.menu-bar{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
 }
+
+.logo{
+    height: 30px;
+    width: 60px;
+}
+.fa { transform: scale(1.5,1); }

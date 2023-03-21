@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script
+      src="https://kit.fontawesome.com/784d230210.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Imdb|Clone</title>
   </head>
   <body>
@@ -16,7 +20,7 @@
       <nav class="navbar">
         <img class="logo" src="Resources/imdb-logo.png" alt="" />
         <div class="menu-bar">
-          <i class="fa fa-bars"></i>
+          <i id="menu-toggle" class="fa fa-bars"></i>
           <h3>Menu</h3>
         </div>
 
@@ -28,6 +32,37 @@
         </div>
       </nav>
     </div>
+    <!-- this section contains the overlay menu container -->
+    <div class="overlay-container">
+      <div class="overlay-div">
+        <div class="overlay-nav">
+          <img class="overlay-img" src="Resources/imdb-logo.png" alt="" />
+          <button id="overlay-toggle" class="overlay-button">X</button>
+        </div>
+        <div class="categories-div">
+          <div class="nav-div space-between">
+            <div class="icon-div">
+              <img src="./Resources/icons8-apple-logo-96.png" alt="" />
+            </div>
+
+            <div class="nav-links">
+              <h2>Movies</h2>
+              <p>Release Calender</p>
+              <p>Top 250 Movies</p>
+              <p>Most Popular Movies</p>
+              <p>Browse Movies by Genre</p>
+              <p>Top Box office</p>
+              <p>Showtimes & Tickets</p>
+              <p>Movie News</p>
+              <p>India Movie Spotlight</p>
+            </div>
+          </div>
+          <div class="nav-div"></div>
+          <div class="nav-div space-between"></div>
+        </div>
+      </div>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>

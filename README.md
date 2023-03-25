@@ -1,0 +1,3 @@
+# Imdb-clone-
+This is a Clone of Imdb...
+This project is built using pure html css and javascript with movie api's

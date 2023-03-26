@@ -25,9 +25,9 @@
           <p>Menu</p>
         </div>
 
-        <form class="search-bar">
+        <form id="search-bar" class="search-bar">
           <div class="search-label">
-            <label class="label text" for="search-input">All</label>
+            <label class="label-text" for="search-input">All</label>
             <div class="caret"></div>
           </div>
           <input
@@ -60,10 +60,12 @@
     </div>
 
     <!-- this section contains the overlay menu container -->
+
+    <!-- categories overlay -->
     <div class="overlay-container">
       <div class="overlay-div">
         <div class="overlay-nav">
-          <img class="overlay-img" src="Resources/imdb-logo.png" alt="" />
+          <img class="overlay-img" src="Resources/imdb-logo.png" alt="logo" />
           <button id="overlay-toggle" class="overlay-button">X</button>
         </div>
         <div class="categories-div">
@@ -164,7 +166,42 @@
         </div>
       </div>
     </div>
-
+    <!-- Search Options overlay -->
+    <div class="search-option-overlay">
+      <div class="basic-search">
+        <div class="keywords">
+          <i class="fa fa-search"></i>
+          <p>All</p>
+        </div>
+        <div class="keywords">
+          <i class="fa fa-film"></i>
+          <p>Titles</p>
+        </div>
+        <div class="keywords">
+          <i class="fa fa-television"></i>
+          <p>TV Episodes</p>
+        </div>
+        <div class="keywords">
+          <i class="fa fa-users"></i>
+          <p>Celebs</p>
+        </div>
+        <div class="keywords">
+          <i class="fa fa-building-o"></i>
+          <p>Companies</p>
+        </div>
+        <div class="keywords">
+          <i class="fa fa-arrow-right"></i>
+          <p>Keywords</p>
+        </div>
+      </div>
+      <div class="advanced-search">
+        <div class="advanced">
+          <i class="fa fa-search"></i>
+          <p>Advanced Search</p>
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

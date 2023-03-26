@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -78,12 +79,13 @@ body{
     height: 2rem;
     gap: 10px;
     border-radius: 5px;
-    padding: 0 5px;
+    box-shadow: none;
 }
 .search-bar input{
     width: 600px;
     outline: none;
     border: none;
+    box-shadow: none;
 }
 .search-bar input:focus ~ .search-label{
     outline: 2px solid yellow;
@@ -95,10 +97,10 @@ body{
     height: 100%;
     padding: 10px;
     border-right: 1px solid rgb(190, 190, 190);
+    border-radius:5px 0 0 5px;
 }
-.label-text{
-    font-size: 2px;
-    font-weight: 100;
+.search-label:hover{
+    background-color: rgb(235, 234, 234);
 }
 .search-icon{
     display: flex;
@@ -132,6 +134,9 @@ body{
     gap: 10px;
 }
 
+.focus{
+    border: 2px solid yellow;
+}
 /* overlay classes  */
 
 .overlay-container{
@@ -212,5 +217,40 @@ body{
 }
 .y{
     color: rgb(245,197, 24);
+}
+
+/* search-option-overlay  */
+
+.search-option-overlay{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 300px;
+    position: absolute;
+    left: 18%;
+    gap: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: lighter;
+
+}
+.basic-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+.keywords{
+    display: flex;
+    gap: 20px;
+}
+.advanced{
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    border-top: 1px solid gray;
+    padding: 10px;
+    gap: 10px;
 }
 

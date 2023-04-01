@@ -16,7 +16,7 @@
     <title>Imdb|Clone</title>
   </head>
   <body>
-    <!-- This section containe the navigation bar  -->
+    <!-- This section contain  navigation bar  -->
     <div class="container">
       <nav class="navbar">
         <img class="logo" src="Resources/imdb-logo.png" alt="imdb-logo" />
@@ -51,8 +51,8 @@
           <div class="sign-in-link center">
             <p>Sign In</p>
           </div>
-          <div class="language-div center">
-            <p>EN</p>
+          <div id="language-div" class="language-div center">
+            <p id="selected-language">EN</p>
             <div class="caret second"></div>
           </div>
         </div>
@@ -205,6 +205,52 @@
         </div>
       </div>
     </div>
+    <!-- Language-overlay -->
+    <div id="language-overlay" class="language-overlay">
+      <div class="fully-supported"><p>FULLY SUPPORTED</p></div>
+      <div class="english">
+        <input type="radio" lang="EN" id="english" /><label for=""
+          >English(United States)</label
+        >
+      </div>
+      <hr />
+      <div class="partially-supported">
+        <p>PARTIALLY SUPPORTED</p>
+        <i class="fa fa-question"></i>
+      </div>
+      <hr />
+      <div class="other-languages">
+        <div>
+          <input lang="FR" type="radio" /><label for="">Francais(Canada)</label>
+        </div>
+        <div>
+          <input lang="FR" type="radio" /><label for="">Francais(France)</label>
+        </div>
+        <div>
+          <input lang="DE" type="radio" /><label for=""
+            >Deustch(Deutschland)</label
+          >
+        </div>
+        <div>
+          <input lang="HN" type="radio" /><label for="">हिंदी(भारत)</label>
+        </div>
+        <div>
+          <input lang="IT" type="radio" /><label for="">Italiano(italia)</label>
+        </div>
+        <div>
+          <input lang="PR" type="radio" /><label for=""
+            >Portugese(Brazil)</label
+          >
+        </div>
+        <div>
+          <input lang="ES" type="radio" /><label for="">Espanol(Espana)</label>
+        </div>
+        <div>
+          <input lang="ES" type="radio" /><label for="">Espanol(Mexico)</label>
+        </div>
+      </div>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>
